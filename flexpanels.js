@@ -1,4 +1,6 @@
-var panels = document.querySelectorAll('.panel');
+window.onload=function()
+{
+  var panels = document.querySelectorAll('.panel');
 console.log('hello');
 function togglePanel(e){
   this.classList.toggle('open');
@@ -13,4 +15,5 @@ function toggleActive(e){
 for(var i=0; i<panels.length;i++){
 panels[i].addEventListener("click",togglePanel); 
 panels[i].addEventListener("transitionend",toggleActive); 
+}
 }
